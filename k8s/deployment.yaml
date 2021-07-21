@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: jquery
+  name: app1-jquery
   namespace: jquery
 spec:
   selector:
@@ -14,7 +14,7 @@ spec:
         app: app-jquery
     spec:
       containers:
-      - name: jquery
+      - name: app1-jquery
         image: 275630824768.dkr.ecr.us-east-2.amazonaws.com/jquery-eks:7
         ports:
         - containerPort: 80
