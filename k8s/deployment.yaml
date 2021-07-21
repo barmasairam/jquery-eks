@@ -6,12 +6,12 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: jquery
+      app: app-jquery
   replicas: 1 # tells deployment to run 2 pods matching the template
   template:
     metadata:
       labels:
-        app: jquery
+        app: app-jquery
     spec:
       containers:
       - name: jquery
